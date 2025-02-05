@@ -72,7 +72,7 @@ export const ProductsComponent = () => {
 								</p>
 							</TableCell>
 							<TableCell className="font-medium">${value.price}</TableCell>
-							<TableCell>{(value.price + 34).toFixed(2)}</TableCell>
+							<TableCell>{Math.round(value.price + 34)}</TableCell>
 							<TableCell>{value.category}</TableCell>
 						</TableRow>
 					))}
